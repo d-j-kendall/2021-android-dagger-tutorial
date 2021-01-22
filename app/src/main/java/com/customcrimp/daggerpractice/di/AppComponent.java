@@ -20,9 +20,10 @@ import dagger.android.support.AndroidSupportInjectionModule;
  */
 @Component( modules = {
         //Determines which modules the particular component will pull its
-        //dependencies from
+        //dependencies from you will always need AndroidSupportInjectionModule
         AndroidSupportInjectionModule.class,
         ActivityBuildersModule.class,
+        AppModule.class,
 })
 public interface AppComponent extends AndroidInjector<BaseApplication> {
 
